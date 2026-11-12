@@ -18,7 +18,7 @@ StatBUU2569-workshop/
 ├── prompts/
 │   └── prompts.md             ← ตัวอย่างคำสั่ง (prompt) สำหรับถาม AI
 ├── notebooks/
-│   └── 01_start_here.ipynb    ← โค้ด Python เริ่มต้น เปิดใน Google Colab ได้
+│   └── 1_start_here.ipynb    ← โค้ด Python เริ่มต้น เปิดใน Google Colab ได้
 ├── slides/                    ← สไลด์ประกอบการบรรยาย (PDF)
 └── LICENSE
 ```
@@ -45,7 +45,7 @@ StatBUU2569-workshop/
 
 ### วิธีที่ 1: ใช้กับ AI โดยตรง (ง่ายที่สุด ไม่ต้องเขียนโค้ด)
 
-1. เข้าไปที่โฟลเดอร์ `data/` แล้วคลิกชื่อไฟล์ที่ต้องการ เช่น `02_water_level_daily.csv`
+1. เข้าไปที่โฟลเดอร์ `data/` แล้วคลิกชื่อไฟล์ที่ต้องการ เช่น `2_water_level_daily.csv`
 2. กดปุ่ม **Download raw file** (ไอคอนลูกศรชี้ลง มุมขวาบน) เพื่อบันทึกไฟล์ลงเครื่อง
 3. เปิด ChatGPT, Claude หรือ Gemini แล้วกดปุ่ม 📎 เพื่ออัปโหลดไฟล์
 4. เปิดไฟล์ `data/DATA_DICTIONARY.md` แล้วคัดลอกคำอธิบายของไฟล์นั้นไปแปะให้ AI อ่านด้วย AI จะเข้าใจความหมายของคอลัมน์ถูกต้องมากขึ้น
@@ -54,14 +54,14 @@ StatBUU2569-workshop/
 
 ### วิธีที่ 2: เปิดใน Google Colab (เขียน Python บนเว็บ ไม่ต้องติดตั้งอะไร)
 
-1. เปิดไฟล์ `notebooks/01_start_here.ipynb` ในคลังนี้
+1. เปิดไฟล์ `notebooks/1_start_here.ipynb` ในคลังนี้
 2. กดปุ่ม **Open in Colab** ที่อยู่ด้านบนของ notebook (ต้องล็อกอินบัญชี Google)
 3. กด **Runtime → Run all** หรือกด ▶ ทีละช่อง
 4. ข้อมูลจะถูกดึงจาก GitHub โดยอัตโนมัติด้วยคำสั่ง
 
    ```python
    import pandas as pd
-   url = "https://raw.githubusercontent.com/Pattharaporn-Aon/StatBUU2569-workshop/main/data/02_water_level_daily.csv"
+   url = "https://raw.githubusercontent.com/Pattharaporn-Aon/StatBUU2569-workshop/main/data/2_water_level_daily.csv"
    df = pd.read_csv(url)
    df.head()
    ```
