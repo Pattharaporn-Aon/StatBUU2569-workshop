@@ -32,7 +32,7 @@ StatBUU2569-workshop/
 | `3_pm25_daily_dirty.csv` | ตรวจข้อมูลก่อนใช้: ค่าว่าง ค่าซ้ำ ค่าผิดปกติ | Outlier, ตรวจข้อมูลก่อนใช้ |
 | `4_icecream_drowning.csv` | สหสัมพันธ์ ≠ เหตุและผล, ตัวแปรแทรกซ้อน | Correlation |
 | `5_anscombe.csv` | ทำไมต้องพล็อตกราฟ ไม่ดูแค่ค่าสถิติ | Anscombe's Quartet |
-| `6_distribution_shapes.csv` | รูปร่างการกระจาย: สมมาตร เบ้ซ้าย เบ้ขวา หลายยอด | รูปร่างการกระจาย |
+| `6_distribution_shapes.csv` | รูปร่างการกระจาย -> สมมาตร เบ้ซ้าย เบ้ขวา หลายยอด | รูปร่างการกระจาย |
 | `7_pm25_provinces.csv` | ค่าเฉลี่ยรายจังหวัด 77 จังหวัด สำหรับทำแผนที่ | Choropleth Map |
 
 รายละเอียดแต่ละคอลัมน์อยู่ใน [`data/DATA_DICTIONARY.md`](data/DATA_DICTIONARY.md)
