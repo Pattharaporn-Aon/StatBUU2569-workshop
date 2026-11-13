@@ -94,7 +94,7 @@ for _, r in bad.iterrows():
 for x in miss["date"]:
     ax.axvline(x, color=GREY, ls=":", lw=1)
 ax.set_ylabel("ระดับน้ำ (ม.)")
-ax.set_title("กิจกรรม 3: ระดับน้ำรายวันก่อนทำความสะอาด (เส้นจุดสีเทา = วันที่ค่าว่าง)")
+ax.set_title("กิจกรรม 3: ระดับน้ำรายวันก่อนทำความสะอาด (เส้นจุดสีเทา = วันที่ค่าสูญหาย)")
 ax.legend()
 ax = axes[1]
 ax.bar(dirty["date"], dirty["rain_mm"], color=ORANGE, width=1)
@@ -108,7 +108,7 @@ ax.set_title("ปริมาณฝนรายวัน: มีวันที�
 save("03_dirty_data_problems")
 
 summary = pd.DataFrame({
-    "ประเภทปัญหา": ["ค่าว่าง water_level_m", "ค่าว่าง rain_mm", "แถวซ้ำ", "ระดับน้ำ < 0 หรือ > 10 ม.", "ฝน > 300 มม."],
+    "ประเภทปัญหา": ["ค่าสูญหาย water_level_m", "ค่าสูญหาย rain_mm", "แถวซ้ำ", "ระดับน้ำ < 0 หรือ > 10 ม.", "ฝน > 300 มม."],
     "จำนวน": [dirty["water_level_m"].isna().sum(), dirty["rain_mm"].isna().sum(),
               dirty.duplicated().sum(), len(bad), len(big)],
 })
